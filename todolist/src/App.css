@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+form{
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}  
+
+form input{
+  height: 30px;
+  flex-basis: 70%;
+}
+
+form button{
+  flex-basis: 30%;
+}
+
+.outerDiv{
+  width: 1170px;
+  margin: auto;
+}
+
+.outerDiv ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.outerDiv ul li{
+  
+}
