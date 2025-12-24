@@ -16,7 +16,13 @@ function App() {
       alert("Already Exists!!")
     }
     event.preventDefault();
+    
   }
+  let list=todolist.map((value, index)=>{
+    return(
+      <ToDoListItems/>
+    )
+  })
   return (
     <div className="App">
       <h1> To-Do List</h1>
@@ -25,7 +31,7 @@ function App() {
       </form>
       <div className='outerDiv'>
         <ul>
-            <li>JavaScript <span>&times;</span></li>
+            {list}
         </ul>
       </div>
     </div>
@@ -33,3 +39,8 @@ function App() {
 }
 
 export default App;
+function ToDoListItems(){
+  return(
+    <li>JavaScript <span>&times;</span></li>
+  )
+}
