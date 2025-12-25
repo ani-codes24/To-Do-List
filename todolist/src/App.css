@@ -37,6 +37,27 @@
   }
 }
 
+body{
+  background-image: url("D:\Coding\todo-list\todolist\todoimage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+  color: rgb(138, 2, 2);
+  text-decoration: underline;
+  font-family:'Times New Roman';
+  font-size: 50px;
+  font-variant: small-caps;
+}
+
+p{
+  color: rgb(212, 0, 0);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  font-weight: 550;
+}
+
 form{
   width: 1170px;
   margin: auto;
@@ -45,12 +66,22 @@ form{
 }  
 
 form input{
-  height: 30px;
+  height: 50px;
   flex-basis: 70%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  font-family: 'Poppins';
+  padding-left: 20px;
 }
 
 form button{
   flex-basis: 30%;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  font-size: 20px;
+  font-family: 'Poppins';
+  
 }
 
 .outerDiv{
@@ -69,6 +100,8 @@ form button{
   padding: 10px;
   background-color: lightyellow;
   color: blue;
+  border-radius: 10px;
+  border: 1px solid lightyellow;
   text-align: left;
   position: relative;
   font-size: 25px;
@@ -79,4 +112,9 @@ form button{
   right: 20px;
   cursor: pointer;
   position: absolute;
+}
+
+.completetodo{
+  text-decoration: line-through;
+  color: red !important;
 }
